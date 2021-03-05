@@ -35,7 +35,7 @@ const ToDoMaterialUI = ({text ,todo, todos , setTodos,checked,setChecked  }) =>{
     }
     
     return (
-        <ListItem button>
+        <ListItem mx="auto" button>
           <Checkbox 
           inputProps={{ "aria-label": "uncontrolled-checkbox" }} 
           onChange = {completeHandler}
