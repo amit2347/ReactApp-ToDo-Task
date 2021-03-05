@@ -32,6 +32,7 @@ const InputForm = ({ setInput, input, todos, setTodos }) => {
       setTodos([
         {
           text: input,
+          //id is used as Date.now() {unix time} in order to sort it later
           id: Date.now(),
           isComplete: false,
           style: { textDecoration: todos.isComplete ? "line-through" : "none" },

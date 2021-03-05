@@ -16,8 +16,7 @@ const SimpleList = ({
   setTodos,
   checked,
   setChecked,
-  refreshChanges,
-}) => {
+  }) => {
   const classes = useStyles();
 
   return (
