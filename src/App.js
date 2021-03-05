@@ -10,7 +10,6 @@ function App() {
 
   useEffect(() => {
     //To sort the todos state array according to requirements given
-    console.log("Triggered");
     const SortedToDos = [...todos].sort((a, b) => {
       if (a.isComplete === false && b.isComplete === false) {
         if (a.id < b.id) return 1;
