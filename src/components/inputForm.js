@@ -37,10 +37,11 @@ const InputForm = ({ setInput, input, todos, setTodos }) => {
           isComplete: false,
           style: { textDecoration: todos.isComplete ? "line-through" : "none" },
         },
+        //previous todos array appended at the last
         ...todos,
       ]);
     }
-
+    //input state is reset to accept the next todo
     setInput("");
   };
   const handleClose = (event, reason) => {

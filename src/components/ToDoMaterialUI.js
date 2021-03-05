@@ -29,6 +29,7 @@ const ToDoMaterialUI = ({
     );
   };
   const deleteHandler = () => {
+    //if the id matches the selected item's id , it is filtered out
     setTodos(Object.values(todos).filter((el) => el.id !== todo.id));
   };
 

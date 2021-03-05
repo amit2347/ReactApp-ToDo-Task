@@ -21,6 +21,7 @@ const SimpleList = ({
 
   return (
     <div className={classes.root}>
+      {/* Mapping over each todo */}
       {todos.map((todo) => (
         <List
           key={todo.id}
