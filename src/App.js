@@ -1,7 +1,7 @@
 import React, { useState ,useEffect } from 'react'
 
 import InputForm from './components/inputForm'
-//import Listitems from './components/Listitems'
+
 import CustomHeader from './components/CustomHeader'
 import SimpleList from './components/SimpleList'
 import './App.css';
@@ -10,10 +10,10 @@ function App() {
   const [todos , setTodos] = useState([]);
   const [checked,setChecked] = useState('');
   
-  
+ 
   useEffect(()=>{
-    
-    todos.sort( (a,b) =>  {
+    console.log("Triggered")
+    const SortedToDos = [...todos].sort( (a,b) =>  {
       if (a.isComplete === false && b.isComplete === false) {
         if (a.id < b.id) return 1  
         else if ( a.id > b.id) return -1
@@ -28,10 +28,10 @@ function App() {
         if( a.id > b.id ) return 1
         else return -1
       }
-    });
-    
-          
-  },[todos,input , checked , setChecked]);
+     return 1
+    })
+    setTodos(SortedToDos)      
+  },[checked]);
    
   
   

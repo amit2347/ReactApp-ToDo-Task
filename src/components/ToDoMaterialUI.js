@@ -8,11 +8,12 @@ import Checkbox from "@material-ui/core/Checkbox";
 
 const ToDoMaterialUI = ({text ,todo, todos , setTodos,checked,setChecked  }) =>{
     const completeHandler = (e) =>{
-        setChecked('true')
+        
         setTodos(Object.values(todos).map((item) => {
               
             if(item.id === todo.id){
-                
+            setChecked(!checked)  
+            
               return{
                   ...item, isComplete : !item.isComplete ,
                   
