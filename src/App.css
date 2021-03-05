@@ -37,16 +37,18 @@
   }
 }
 
-.completed{
+.completed {
   text-decoration: line-through;
   opacity: 0.5;
 }
 
-.container-list{
+.container-list {
   display: flex;
   align-items: center;
 }
-.makeStyles-root-2{
-  margin : 0 auto;
-  
+.makeStyles-root-2 {
+  margin: 0 auto;
+}
+.jss2 {
+  margin: 0 auto;
 }
