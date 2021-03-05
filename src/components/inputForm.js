@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const InputForm = ({ setInput, input, todos, setTodos }) => {
+  //State used to Check for invalid text input
   const [open, setOpen] = useState(false);
   const classes = useStyles();
   const handleChange = (e) => {
@@ -25,7 +26,7 @@ const InputForm = ({ setInput, input, todos, setTodos }) => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (input === "") {
+    if (input === "" || /^\s*$/.test(input)) {
       setOpen(true);
     } else {
       setTodos([

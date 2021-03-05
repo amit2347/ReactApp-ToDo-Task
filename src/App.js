@@ -28,6 +28,7 @@ function App() {
 
   return (
     <div className="App">
+      {/* Jumbotron Created Using Bootstrap  */}
       <CustomHeader></CustomHeader>
       <InputForm
         input={input}
